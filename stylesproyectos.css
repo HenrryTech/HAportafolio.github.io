@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav a{
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    background-color: #293952;
+    overflow: hidden;
+    margin: 0, 10px, 0, 0px;
+    align-items: center;
+    height: 40px;
+    padding: 5px,0px,5px,0px;
+          
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px    ;
+}
+.proyectos{
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 50px;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(175, 179, 179, 0.7);
+    width: 150px;
+    height: 150px;
+    margin-top: 75px;
+    font-family: "Source Code Pro", monospace;
+}
+a{
+    display: flex;
+    margin: 5px;
+}
+.icon_git{
+    display: flex;
+    
+    justify-content: center;
+}
+
+img{
+ margin: 5px;
+ display: flex;
+ align-items: center;
+justify-content: center;
+}
+h1{
+    font-size: 7rem;
+    color: #ffffff;
+    margin: 50px, 0px, 150px, 0px;
+    text-shadow: 0 0 10px rgba(175, 179, 179, 0.7);
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+h2{
+color: #ffffff;
+}
+.imga{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.proyectos h2{
+text-align: center;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+@keyframes estrellas {
+    from {transform: translateY(0);}
+    to {transform: translateY(-1000px);}
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    box-shadow: 
+       100px 200px yellow, 150px 400px white, 300px 700px white,
+  500px 900px white, 600px 200px white, 900px 400px white,
+  1200px 600px white, 1300px 1000px white,
+  1400px 300px white, 1600px 800px yellow,
+  1800px 500px yellow, 1900px 100px white;
+    animation: estrellas 50s linear infinite;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    box-shadow: 
+      200px 300px yellow, 400px 600px #dcdcdc,
+      800px 900px #ffffff, 1000px 700px #f0f0f0,
+      1300px 500px #e0e0e0, 1600px 400px #fff,
+      1800px 900px #fafafa;
+    animation: estrellas 80s linear infinite;
+}
